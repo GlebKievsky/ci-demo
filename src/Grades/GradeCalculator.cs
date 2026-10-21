@@ -8,7 +8,7 @@ public static class GradeCalculator
         if (points < 0 || points > 100)
             throw new ArgumentOutOfRangeException(nameof(points), "Баллы должны быть от 0 до 100");
 
-        if (points >= 90) return 5;
+        if (points > 90) return 5;
         if (points >= 75) return 4;
         if (points >= 60) return 3;
         return 2;
