@@ -1,5 +1,7 @@
 # ci-demo
 
+[![CI](https://github.com/GlebKievsky/ci-demo/actions/workflows/ci.yml/badge.svg)](https://github.com/GlebKievsky/ci-demo/actions/workflows/ci.yml)
+
 Учебный репозиторий к лекции «Автоматизация и CI/CD с GitHub Actions».
 
 Маленький проект на C#: библиотека переводит баллы (0–100) в оценку по пятибалльной шкале, тесты на xUnit проверяют её.
