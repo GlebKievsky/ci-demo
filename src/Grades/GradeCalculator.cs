@@ -21,6 +21,6 @@ public static class GradeCalculator
 
         int sum = 0;
         foreach (int p in points) sum += p;
-        return sum / points.Count;
+        return (double)sum / points.Count;
     }
 }
