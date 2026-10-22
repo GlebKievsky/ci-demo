@@ -25,4 +25,16 @@ public class GradeCalculatorTests
     {
         Assert.Throws<ArgumentOutOfRangeException>(() => GradeCalculator.ToGrade(points));
     }
+
+    [Fact]
+    public void Average_KeepsFractionalPart()
+    {
+        Assert.Equal(82.5, GradeCalculator.Average(new[] { 80, 85 }));
+    }
+
+    [Fact]
+    public void Average_ReturnsZero_ForEmptyList()
+    {
+        Assert.Equal(0, GradeCalculator.Average(Array.Empty<int>()));
+    }
 }
