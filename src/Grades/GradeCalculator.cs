@@ -13,4 +13,14 @@ public static class GradeCalculator
         if (points >= 60) return 3;
         return 2;
     }
+
+    // Средний балл; для пустого списка — 0
+    public static double Average(IReadOnlyList<int> points)
+    {
+        if (points.Count == 0) return 0;
+
+        int sum = 0;
+        foreach (int p in points) sum += p;
+        return sum / points.Count;
+    }
 }
